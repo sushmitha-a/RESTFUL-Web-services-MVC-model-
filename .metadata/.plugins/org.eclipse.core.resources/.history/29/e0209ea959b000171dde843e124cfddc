@@ -1,0 +1,5 @@
+package org.sushmitha.webapp1.messenger.database;
+
+public class DatabaseClass {
+
+}

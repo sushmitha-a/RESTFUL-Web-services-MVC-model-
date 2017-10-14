@@ -1,0 +1,23 @@
+package org.sushmitha.webapp1.messenger.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.sushmitha.webapp1.messenger.database.DatabaseClass;
+import org.sushmitha.webapp1.messenger.mode.Message;
+
+
+public class MessageService {
+
+	private Map<Long,Message> messages = DatabaseClass.getMessages();
+	public List<Message> getAllMessages(){
+		Message m1 = new Message(1L ,"hello world" ,"Sushmitha");
+		Message m2 = new Message(2L ,"Hi India Biz" ,"Sushmitha");
+		List<Message> list = new ArrayList<>();
+		list.add(m1);
+		list.add(m2);
+		return list;
+		
+	}
+}

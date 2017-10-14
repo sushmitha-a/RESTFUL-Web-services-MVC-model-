@@ -1,0 +1,14 @@
+package org.sushmitha.webapp1.messenger.service;
+
+import java.util.List;
+
+import org.sushmitha.webapp1.messenger.mode.Message;
+
+
+public class MessageService {
+
+	
+	public List<Message> getAllMessages(){
+		Message m1 = new Message(1L ,"hello world" ,"Sushmitha");
+	}
+}
